@@ -1,9 +1,9 @@
-#Personal Website
+# Personal Website
 
-##Changelog
+## Changelog
 
-###v1.0
+### v1.0
 - Initial release of the website with basic functionality
 
-##Author
+## Author
 Sigurd Koldste
