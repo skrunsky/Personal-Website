@@ -60,7 +60,9 @@ body {
 }
 
 .heading-social-media {
-   animation: moveUp 2s ease-out;
+   animation: moveUp 1s ease-out;
+   animation-delay: 1s; 
+   animation-fill-mode: backwards; 
 
    padding: 15px;
    text-align: center;
@@ -84,7 +86,9 @@ body {
 }
 
 .footer-text {
-   animation: moveUp 2s ease-out;
+   animation: moveUp 1s ease-out;
+   animation-delay: 1s; 
+   animation-fill-mode: backwards;
 }
 
 /* Animations */
@@ -122,10 +126,6 @@ body {
 
 @keyframes moveUp {
    0% {
-      opacity: 0;
-   }
-
-   50% {
       opacity: 0;
       transform: translateY(50px); 
    }
