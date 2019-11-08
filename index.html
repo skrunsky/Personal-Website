@@ -1,41 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sigurd Koldste</title>
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/styles.css">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
 </head>
+
 <body>
-    
+
     <!-- Main contents of the site -->
     <main class="main" role="main">
 
-        <!-- Centered box -->
-        <div class="hero-box">
-            <h1 class="heading-primary">
-                <span class="heading-primary-main">Sigurd Koldste</span>
-                <span class="heading-primary-sub">Global Business Engineering Studerende</span>
-            </h1>
 
-            <!-- Social media -->
-            <div class="heading-social-media">
-                <a href="https://linkedin.com/in/sigurdkoldste"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://github.com/skrunsky"><i class="fab fa-github"></i></a>
+        <section class="hero">
+
+            <div class="hero__inner">
+                <h1 class="hero__title">
+                    <span class="hero__title--main">Sigurd Koldste</span>
+                    <span class="hero__title--sub">Ingeniørstuderende</span>
+                </h1>
             </div>
 
-        </div>
+        </section>
 
-        <div class="footer-box">
-            <p class="footer-text">&copy; 2019 Sigurd Koldste - Alle rettigheder forbeholdes.</p>
-        </div>
+
+        <section class="profile">
+
+            <div class="row profile__inner">
+
+                <div class="col-1-2 profile__text">
+                    <h2>Velkommen!</h2>
+                    <p>Mit navn er Sigurd, og jeg er Global Business Engineering (GBE)
+                        studerende i Horsens. Jeg specialiserer mig i ICT Engineering, og jeg
+                        elsker, når et stykke kode virker. Men jeg er som Global Business Engineer
+                        også optaget af alle andre aspekter af, hvad der skaber en succesfuld
+                        forretning, både i form af internationalisering, finansiering, marketing og
+                        kommunikation.</p>
+                    <p>Mine interesserer spænder vidt, og jeg er altid på udkig efter nye projekter
+                        at blive involveret i. I min fritid arbejder jeg med forskellige aspekter af
+                        web applikationer og siddet i flere foreningsbestyrelser som har arbejdet
+                        med forskellige kulturarrangementer herunder specielt teater.</p>
+
+
+                    <!-- SoMe icons -->
+                    <div class="profile__btn-group">
+                        <a class="btn btn--icon" href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn--icon" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn--icon" href=""><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn--secondary" href="">KONTAKT MIG</a>
+                    </div>
+                </div>
+
+                <div class="col-1-2 profile__image">
+                    <img src="img/profile.png" alt="">
+                </div>
+            </div>
+
+
+
+        </section>
 
     </main>
 
+
+    <footer class="footer">
+        <p class="footer__copyright">&copy; 2019 - Sigurd Koldste</p>
+    </footer>
+
 </body>
+
 </html>
