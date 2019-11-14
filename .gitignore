@@ -9,7 +9,7 @@
 !.vscode/extensions.json
 
 ### VisualStudioCode Patch ###
-# Ignore all local history of files
+# Ignore all locnpm run al history of files
 .history
 
 # End of https://www.gitignore.io/api/visualstudiocode

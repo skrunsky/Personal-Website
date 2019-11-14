@@ -1,0 +1,40 @@
+//////////////////////////////
+// COLORS
+//////////////////////////////
+$color-primary: #149df2; 
+$color-primary-light: lighten($color-primary, 15%);
+$color-primary-dark: darken($color-primary, 15%); 
+
+$color-secondary: #ff9400;
+$color-secondary-light: lighten($color-secondary, 15%);
+$color-secondary-dark: darken($color-secondary, 15%); 
+
+$color-white: #FFF;
+$color-light: #F7F7F7;
+
+$color-black: #1C1C1C;
+
+//////////////////////////////
+// FONTS
+//////////////////////////////
+$font-header: 'Poppins', sans-serif; 
+$font-body: 'Roboto', sans-serif;
+
+$font-size-default: 1.4rem;
+$font-size-1: 1.9rem; 
+$font-size-2: 2.5rem;
+$font-size-3: 3.3rem;
+$font-size-4: 4.4rem; 
+$font-size-5: 5.8rem;
+
+//////////////////////////////
+// GRID
+//////////////////////////////
+$grid-width: 144rem;
+$gutter-vertical: 8rem;
+$gutter-horizontal: 6rem;
+
+//////////////////////////////
+// SECTIONS
+//////////////////////////////
+$section-padding: 4rem;

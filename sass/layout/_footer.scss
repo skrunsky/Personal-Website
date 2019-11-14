@@ -1,0 +1,19 @@
+.footer {
+    // // REVIEW: Should this animation be changed?
+    // animation: moveUp 1s ease-out; 
+    // animation-delay: 1s; 
+    // animation-fill-mode: backwards; 
+
+    @include shadow;
+
+    background-color: $color-black;
+    color: $color-white;
+    height: 10rem;
+    margin: 0 4rem 4rem 4rem;
+    padding: 4.3rem 4rem;
+
+    &__copyright {
+        line-height: 1;
+    }
+
+} 

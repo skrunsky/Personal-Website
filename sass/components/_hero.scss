@@ -1,0 +1,40 @@
+.hero {
+    background-color: $color-white;
+    height: 100vh;
+    padding: $section-padding;
+
+    &__inner {
+        @include shadow;
+
+        background-image: url("../img/background.jpg");
+        background-size: cover;
+        height: 100%;
+        position: relative;
+    }
+
+    &__title {
+        @include absCenter;
+
+        color: $color-white;
+        text-align: center;
+
+        &--main {
+            display: block;
+
+            @include responsive(tablet-portrait) {
+                font-size: $font-size-4;
+            }
+
+        }
+
+        &--sub {
+            display: block;
+            font-size: $font-size-4;
+
+            @include responsive(tablet-portrait) {
+                font-size: $font-size-3;
+            }
+        }
+    }
+
+}

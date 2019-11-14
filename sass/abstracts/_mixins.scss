@@ -1,0 +1,73 @@
+// POSITIONING
+
+@mixin absCenter {
+    position: absolute;
+        top: 50%; 
+        left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin clearfix {
+    &::after {
+        clear: both;
+        content: "";
+        display: table;
+    }    
+}
+
+// STYLING
+
+@mixin shadow {
+    box-shadow: .5rem .5rem 1rem rgba($color-black, .1)
+}
+
+@mixin shadow-sm {
+    box-shadow: .2rem .2rem 1rem rgba($color-black, .1)
+}
+
+// MEDIA QUERY MANAGER
+/* 
+0 - 600px:          Phone
+600 - 900px:        Tablet portrait
+900 - 1200px:       Tablet landscape
+(1200 - 1800px)     Normal styles
+1800px+:            Big desktop
+
+Breakpoint arguments: 
+- phone
+- tablet-portrait
+- tablet-landscape
+- normal-desktop
+- big-desktop
+
+Standard 1em is 16px. Ems are better to use than 1rem.
+*/
+
+@mixin responsive($breakpoint) {
+    @if $breakpoint == phone {
+        @media (max-width: 37.5em) {@content;};     // 600px
+    }
+
+    @if $breakpoint == tablet-portrait {
+        @media (max-width: 56.25em) {@content;};      // 900px
+    }
+
+    @if $breakpoint == tablet-landscape {
+        @media (max-width: 75em) {@content;};     // 1200px
+    }
+
+    @if $breakpoint == small-desktop {
+        @media (max-width: 90em) {@content;};      // 1440px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media (min-width: 120em) {@content;};     // 1920px
+    }
+}
+
+/* ORDER OF RESPONSIVE DESIGN
+1. Base + Typography
+2. General layout + Grid (Layout folder)
+3. Page Layout (Pages folder)
+4. Components
+*/

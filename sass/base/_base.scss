@@ -1,0 +1,19 @@
+//////////////////////////////
+// BASIC RESET
+//////////////////////////////
+*,
+*::after,
+*::before {
+   box-sizing: inherit;
+   margin: 0;
+   padding: 0;
+}
+
+html {
+   font-size: 62.5%; // Standard of 10px without user modification
+}
+
+body {
+   background-color: $color-light;
+   box-sizing: border-box;
+}

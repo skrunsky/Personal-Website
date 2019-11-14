@@ -1,0 +1,70 @@
+.btn {
+    @include shadow;
+
+    &:link,
+    &:visited {
+        border-radius: .3rem;
+        display: inline-block;
+        font-size: $font-size-3;
+        text-decoration: none;
+
+        @include responsive(small-desktop) {
+            font-size: $font-size-1;
+        }
+
+    }
+
+    &:hover {
+    }
+
+    &:active {
+        @include shadow-sm;
+    }
+
+    // FILLED DEFAULT BUTTONS
+    &--primary {
+        background: linear-gradient(
+            $color-primary,
+            $color-primary-dark
+        );
+        color: $color-white;
+        padding: 2rem 2.5rem;
+
+        &:hover {
+            background-color: $color-primary-light;
+        }
+    }
+
+    &--secondary {
+        background: linear-gradient(
+            $color-secondary-light,
+            $color-secondary
+        ); 
+        color: $color-white;
+        padding: 2rem 2.5rem;
+
+        &:hover {
+            background: linear-gradient(
+                $color-secondary,
+                $color-secondary
+            );
+        }
+    }
+
+    // ICON BUTTON
+    &--icon {
+        background: linear-gradient(
+            $color-primary,
+            $color-primary-dark
+        );
+        color: $color-white;
+        padding: 2rem 2rem;
+
+        &:hover {
+            background: linear-gradient(
+                $color-primary-dark, 
+                $color-primary-dark
+            );
+        }
+    }
+}

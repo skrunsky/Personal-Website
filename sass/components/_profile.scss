@@ -1,0 +1,65 @@
+.profile {
+    padding: 4rem;
+
+    &__inner {
+        @include shadow;
+        background-color: $color-white;
+        height: 100%;
+    }
+
+    &__text {
+        padding: 8rem;
+
+        p {
+            font-size: $font-size-1;
+        }
+    }
+
+    &__btn-group {
+        display: flex;
+        padding: 8rem 0;
+        width: 100%;
+
+        @include responsive(small-desktop) {
+            padding: 6rem 0;
+        }
+
+        .btn:not(:last-child) {
+            margin-right: 4rem;
+
+            @include responsive(small-desktop) {
+                margin-right: 2.5rem;
+            }
+        }
+
+    }
+
+    &__icon-group {
+        margin-right: 4rem;
+        width: auto;
+
+        
+
+        @include responsive(small-desktop) {
+            margin-right: 2.5rem;
+        }
+
+        @include responsive(tablet-portrait) {
+            float: left;
+            margin-right: 0;
+            width: 100% !important;
+        }
+    }
+
+    &__image {
+        overflow: hidden;
+
+        @include responsive(tablet-portrait) {
+            display: none;
+        }
+
+        img {
+            max-height: 100%;
+        }
+    }
+}

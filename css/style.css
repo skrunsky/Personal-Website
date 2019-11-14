@@ -9,6 +9,7 @@ Breakpoint arguments:
 - phone
 - tablet-portrait
 - tablet-landscape
+- normal-desktop
 - big-desktop
 
 Standard 1em is 16px. Ems are better to use than 1rem.
@@ -103,10 +104,7 @@ p {
     display: inline-block;
     font-size: 3.3rem;
     text-decoration: none; }
-    @media (max-width: 75em) {
-      .btn:link, .btn:visited {
-        font-size: 2.5rem; } }
-    @media (max-width: 56.25em) {
+    @media (max-width: 90em) {
       .btn:link, .btn:visited {
         font-size: 1.9rem; } }
   .btn:active {
@@ -126,7 +124,7 @@ p {
   .btn--icon {
     background: linear-gradient(#149df2, #0a70b0);
     color: #FFF;
-    padding: 2rem 2.5rem; }
+    padding: 2rem 2rem; }
     .btn--icon:hover {
       background: linear-gradient(#0a70b0, #0a70b0); }
 
@@ -149,9 +147,15 @@ p {
     text-align: center; }
     .hero__title--main {
       display: block; }
+      @media (max-width: 56.25em) {
+        .hero__title--main {
+          font-size: 4.4rem; } }
     .hero__title--sub {
       display: block;
       font-size: 4.4rem; }
+      @media (max-width: 56.25em) {
+        .hero__title--sub {
+          font-size: 3.3rem; } }
 
 .profile {
   padding: 4rem; }
@@ -167,16 +171,32 @@ p {
     display: flex;
     padding: 8rem 0;
     width: 100%; }
+    @media (max-width: 90em) {
+      .profile__btn-group {
+        padding: 6rem 0; } }
     .profile__btn-group .btn:not(:last-child) {
       margin-right: 4rem; }
-      @media (max-width: 75em) {
+      @media (max-width: 90em) {
         .profile__btn-group .btn:not(:last-child) {
-          width: 33.33%; } }
+          margin-right: 2.5rem; } }
+  .profile__icon-group {
+    margin-right: 4rem;
+    width: auto; }
+    @media (max-width: 90em) {
+      .profile__icon-group {
+        margin-right: 2.5rem; } }
+    @media (max-width: 56.25em) {
+      .profile__icon-group {
+        float: left;
+        margin-right: 0;
+        width: 100% !important; } }
   .profile__image {
-    height: 100%; }
+    overflow: hidden; }
+    @media (max-width: 56.25em) {
+      .profile__image {
+        display: none; } }
     .profile__image img {
-      display: block;
-      height: 100%; }
+      max-height: 100%; }
 
 .row {
   margin: 0 auto; }
